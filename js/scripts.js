@@ -1,0 +1,1 @@
+@HostListener('document:scroll', ['$event']) onScroll() { if (window.pageYOffset >120) { this.renderer.addClass(document.body, 'top-nav-collapse'); } else { this.renderer.removeClass(document.body, 'top-nav-collapse'); } }
