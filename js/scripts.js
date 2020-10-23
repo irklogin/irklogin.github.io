@@ -1,1 +1,5 @@
-@HostListener('document:scroll', ['$event']) onScroll() { if (window.pageYOffset >120) { this.renderer.addClass(document.body, 'top-nav-collapse'); } else { this.renderer.removeClass(document.body, 'top-nav-collapse'); } }
+$('[data-spy="scroll"]').each(function () {
+    var $spy = $(this).scrollspy('refresh')
+  })
+
+  $('body').scrollspy({ target: '#list-example' })
